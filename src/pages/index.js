@@ -2,20 +2,14 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Banner from "@/components/Home/Banner";
 
 export default function Home() {
   return (
+    
     <>
-    <h1>hello this is ranjeet</h1>  </>
+    <Banner />
+</> 
+    
   );
 }
